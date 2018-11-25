@@ -6,8 +6,8 @@
   </head>
   <body>
       <header class="main-header">
-          <h1 class="hidden">Студия Нердс</h1>
-          <a class="nerds-logo"href=""><img src="nerdsLogo.svg" alt="Наш логотип"></a>
+          <h1 class="visually-hidden">Студия Нердс</h1>
+          <a class="nerds-logo"href=""><img src="img/nerds-logo.png" alt="Наш логотип"></a>
           <nav class="main-navigation">
               <ul class="site-navigation">
                   <li><a href="">Студия</a></li>
@@ -23,22 +23,22 @@
           <p>математически выверенный дизайн  для вашего сайта или приложения</p>
       </header>
       <main class="container">
-          <h2 class="hidden">Услуги</h2>
+          <h2 class="visually-hidden">Услуги</h2>
           <section class="products">
               <ul class="products-list">
                   <li class="web-sites">
-                      <img src="img/sites.png" alt="Веб-сайты">
+                      <img src="img/illustration-1.png" alt="Веб-сайты">
                       <h3>ВЕБ-САЙТЫ</h3>
                       <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
                       <a href="catalog.html">Заказать</a>
                   </li>
                   <li class="apps">
-                      <img src="img/apps.png" alt="Приложения">
+                      <img src="img/illustration-2.png" alt="Приложения">
                       <h3>ПРИЛОЖЕНИЯ</h3>
                       <a href="catalog.html">Заказать</a>
                   </li>
                   <li class="presentations">
-                      <img src="img/presentations.png" alt="Презентации">
+                      <img src="img/illustration-3.png" alt="Презентации">
                       <h3>Презентации</h3>
                       <a href="catalog.html">Заказать</a>
                   </li>
@@ -59,7 +59,7 @@
                </ul>
            </section>
            <section class="statistics">
-               <img src="img/nerds.png" alt="Логотип">
+               <img src="img/nerds-illustration.png" alt="Логотип">
                <p>С 2004 года любим точность во всем:</p>
                <table>
                    <tr class="statistics-percents">
@@ -76,13 +76,35 @@
             </section>
             <section class="projects">
                 <ul class="projects-list">
-                    <li><a href=""><img src="img/htmlacademy.svg" alt="HTML Academy"></a></li>
-                    <li><a href=""><img src="img/borodinsky.svg" alt="Barbershop Borodinsky"></a></li>
-                    <li><a href=""><img src="img/pink.svg" alt="Pink"></a></li>
-                    <li><a href=""><img src="img/mishka.svg" alt="Mishka"></a></li>
+                    <li><a href=""><img src="img/logo-1.png" alt="HTML Академия"></a></li>
+                    <li><a href=""><img src="img/logo-2.png" alt="Барбершоп Бородинский"></a></li>
+                    <li><a href=""><img src="img/logo-3.png" alt="Пинк"></a></li>
+                    <li><a href=""><img src="img/logo-4.png" alt="Мишка"></a></li>
                 </ul>
             </section>
       </main>
+      <form class="feedback" action="" method="post">
+          <h2>Напишите нам</h2>
+          <label for="username">Ваше имя:</label>
+          <input type="text" name="username" id="username" placeholder="Имя Фамилия">
+          <label for="useremail">Ваш e-mail:</label>
+          <input type="email" name="email" id="useremail" placeholder="email@example.com">
+          <br>
+          <label for="comment">Текст письма:</label>
+          <br>
+          <textarea name="comment" rows="5" cols="40"></textarea>
+          <br>
+          <button type="submit" name="sendbutton">Отправить</button>
+          <button type="button" name="closebutton">Закрыть</button>
+       </form>
+          <section class="map">
+              <div class="feedback-write-us">
+                <h3>NЁRDS DESIGN STUDIO</h3>
+                <span class="feedback-address">191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8</span>
+                <span class="feedback-telephone">тел. +7(812)275-75-75</span>
+                <button type="button" name="write-us-button">Напишите нам</button>
+              </div>
+          </section>
       <footer class="main-footer">
           <div class="footer-social">
               <ul>
