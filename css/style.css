@@ -8,7 +8,9 @@ body {
   color:#283136;
   background-color: #ffffff;
 }
-
+/* *{
+  background: rgba(0,45,23,0.3);
+} */
 a {
   text-decoration: none;
 }
@@ -22,17 +24,71 @@ a {
 }
 .main-header{
   background-color: #eeeeee;
+  margin-bottom:80px;
+  min-height: 355px;
+}
+.container{
+  max-width: 1200px;
+  margin:0 auto;
+}
+.main-navigation{
+  display: flex;
+  align-items: center;
+}
+.nerds-logo{
+  position: relative;
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  -ms-flex: 0 0 25%;
+  -webkit-box-flex: 0;
+  flex: 0 0 25%;
+  max-width: 25%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .nerds-logo:hover{
   opacity:0.3;
 }
-.main-navigation,.site-navigation {
+.user-navigation,.site-navigation {
+  margin:0;
+  padding:0;
   line-height: 30px;
   background-color: #eeeeee;
   text-transform: uppercase;
   font-weight: 500;
 }
+.site-navigation{
+  position: relative;
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  -ms-flex: 0 0 50%;
+  -webkit-box-flex: 0;
+  flex: 0 0 50%;
+  max-width: 50%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+.site-navigation li{
 
+}
+.user-navigation{
+  position: relative;
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  -ms-flex: 0 0 25%;
+  -webkit-box-flex: 0;
+  flex: 0 0 25%;
+  max-width: 25%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+}
 .site-navigation,.user-navigation{
   list-style: none;
 }
@@ -64,6 +120,20 @@ color:#fb565a;
 }
 .products-list{
   list-style:none;
+  display:flex;
+  justify-content: space-between;
+}
+.products-list li{
+  position: relative;
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    -ms-flex: 0 0 33.333333%;
+    -webkit-box-flex: 0;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 .products-list h3{
   font-size:24px;
@@ -175,7 +245,7 @@ color:#fb565a;
   font-weight: 700;
   color:#000000;
 }
-.footer-pargraph{
+.footer-paragraph{
   line-height:22px;
 }
 .footer-social ul{
