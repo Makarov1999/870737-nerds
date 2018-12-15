@@ -24,17 +24,38 @@
             <h1 class="shop-template" >Магазин готовых шаблонов</h1>
           </div>
         </header>
+        <div class="container">
+          <div class="main-catalog-row">
+            <div class="form-column">
         <form class="" action="" method="post">
-            <fieldset>
-                <legend>Стоимость</legend>
-                <!-- Здесь будет фильтр стоимости -->
+            <fieldset class="price-filter">
+                <legend class="filter-title-price">Стоимость:</legend>
+                <div class="range-wrap">
+                  <div class="range">
+                    <div class="range-scale-empty">
+                      <div class="range-scale-full"></div>
+                    </div>
+                    <span class="range-slider range-slider-left"></span>
+                    <span class="range-slider range-slider-right"></span>
+                  </div>
+                </div>
+                <div class="price-filter-outputs">
+                  <div class="price-filter-output">
+                    <label for="price-output-1" class="price-label" >ОТ</label>
+                    <input type="text" name="price-1" value="0" class="price-filter-output-field" id="price-output-1">
+                  </div>
+                  <div class="price-filter-output" class="price-filter-output-field">
+                    <label for="price-output-2" class="price-label">ДО</label>
+                    <input type="text" name="price-2" value="15000" id="price-output-2" class="price-filter-output-field">
+                  </div>
+                </div>
             </fieldset>
-            <fieldset>
-                <legend>Сетка:</legend>
+            <fieldset class="greed-filter">
+                <legend class="filter-title-greed">Сетка:</legend>
                 <ul class="greed-list">
                     <li class="greed-option">
                         <input class="visually-hidden" type="radio"
-                        name="greed-group" id="adaptive-greed" value="adaptive" checked>
+                        name="greed-group" id="adaptive-greed" value="adaptive" checked >
                         <label for="adaptive-greed">Адаптивная</label>
                     </li>
                     <li class="greed-option">
@@ -45,13 +66,13 @@
                     <li class="greed-option">
                         <input class="visually-hidden" type="radio"
                         name="greed-group" id="resin-greed" value="resin">
-                        <label for="resin-greed">Фиксированная</label>
+                        <label for="resin-greed">Резиновая</label>
                     </li>
                 </ul>
             </fieldset>
-            <fieldset>
-                <legend>Особенности:</legend>
-                    <ul class="features">
+            <fieldset class="features-filter">
+                <legend class="filter-title-features">Особенности:</legend>
+                    <ul class="features-list">
                       <li class="features-item">
                         <input class="visually-hidden" type="checkbox"
                         name="slider-feature" value="slider-item" id="slider" checked>
@@ -79,16 +100,35 @@
                       </li>
                     </ul>
             </fieldset>
-            <button type="button" name="showbutton">Показать</button>
+            <button type="button" class="showbutton">Показать</button>
         </form>
-        <section class="catalog">
-            <img src="img/img-sedona.jpg" alt="Седона">
-            <img src="img/img-pink.jpg" alt="Пинк">
-            <img src="img/img-barbershop.jpg" alt="Барбершоп">
-            <img src="img/img-mishka.jpg" alt="Мишка">
-            <img src="img/img-aplus.jpg" alt="Аплюс">
-            <img src="img/img-kvast.jpg" alt="Кваст">
-      </section>
+      </div>
+      <div class="catalog-column">
+        <div class="sort-panel">
+            <h3 class="sort-panel-title">Сортировать</h3>
+          <div class="sort-panel-tools">
+            <button type="button" class="sort-button active-button">По цене</button>
+            <button type="button" class="sort-button">По типу</button>
+            <button type="button" class="sort-button">По названию</button>
+          </div>
+          <div class="up-down-buttons">
+            <button type="button" class="down-button arrow-active-button"></button>
+            <button type="button" class="up-button"></button>
+          </div>
+        </div>
+      <section class="catalog">
+          <img src="img/img-sedona.jpg" alt="Седона">
+          <img src="img/img-pink.jpg" alt="Пинк">
+          <img src="img/img-barbershop.jpg" alt="Барбершоп">
+          <img src="img/img-mishka.jpg" alt="Мишка">
+          <img src="img/img-aplus.jpg" alt="Аплюс">
+          <img src="img/img-kvast.jpg" alt="Кваст">
+    </section>
+     </div>
+      </div>
+      </div>
+
+
       <form class="feedback" action="" method="post">
           <h2>Напишите нам</h2>
           <label for="username">Ваше имя:</label>
