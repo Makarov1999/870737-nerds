@@ -10,7 +10,7 @@
         <header class="main-header">
           <div class="container">
             <nav class="main-navigation">
-                <a class="nerds-logo"href="index.html"><img src="img/nerds-logo.png" alt="Наш логотип"></a>
+                <a class="nerds-logo-link"href="index.html"><img src="img/nerds-logo.png" alt="Наш логотип"></a>
                 <ul class="site-navigation">
                     <li><a href="">Студия</a></li>
                     <li><a href="">Клиенты</a></li>
@@ -117,18 +117,94 @@
           </div>
         </div>
       <section class="catalog">
-          <img src="img/img-sedona.jpg" alt="Седона">
-          <img src="img/img-pink.jpg" alt="Пинк">
-          <img src="img/img-barbershop.jpg" alt="Барбершоп">
-          <img src="img/img-mishka.jpg" alt="Мишка">
-          <img src="img/img-aplus.jpg" alt="Аплюс">
-          <img src="img/img-kvast.jpg" alt="Кваст">
+          <div class="catalog-item">
+            <div class="catalog-item-decorate"></div>
+            <div class="catalog-item-image">
+              <img src="img/img-sedona.jpg" alt="Седона">
+            </div>
+            <div class="catalog-item-description">
+              <a href="#" class="catalog-item-link"><h3 class="description-header">Sedona</h3></a>
+              <p class="description-paragraph">Информационный сайт для туристов</p>
+              <div class="description-buttons">
+                <button type="button" class="description-button">9 900 РУБ.</button>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-item">
+            <div class="catalog-item-decorate"></div>
+            <div class="catalog-item-image">
+              <img src="img/img-pink.jpg" alt="Пинк">
+            </div>
+            <div class="catalog-item-description">
+              <a href="#" class="catalog-item-link"><h3 class="description-header">Pink App</h3></a>
+              <p class="description-paragraph">Продуктовый лендинг приложения для iOS и Android</p>
+              <div class="description-buttons">
+                <button type="button" class="description-button">9 900 РУБ.</button>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-item">
+            <div class="catalog-item-decorate"></div>
+            <div class="catalog-item-image">
+              <img src="img/img-barbershop.jpg" alt="Барбершоп">
+            </div>
+            <div class="catalog-item-description">
+              <a href="#" class="catalog-item-link"><h3 class="description-header">Barbershop</h3></a>
+              <p class="description-paragraph">Сайт салона красоты. Для мужчин, да.</p>
+              <div class="description-buttons">
+                <button type="button" class="description-button">9 900 РУБ.</button>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-item">
+            <div class="catalog-item-decorate"></div>
+            <div class="catalog-item-image">
+                <img src="img/img-mishka.jpg" alt="Мишка">
+            </div>
+            <div class="catalog-item-description">
+              <a href="#" class="catalog-item-link"><h3 class="description-header">Mishka</h3></a>
+              <p class="description-paragraph">Интернет-магазин вязаных игрушек</p>
+              <div class="description-buttons">
+                <button type="button" class="description-button">9 900 РУБ.</button>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-item">
+            <div class="catalog-item-decorate"></div>
+            <div class="catalog-item-image">
+                <img src="img/img-aplus.jpg" alt="Аплюс">
+            </div>
+            <div class="catalog-item-description">
+              <a href="#" class="catalog-item-link"><h3 class="description-header">A plus</h3></a>
+              <p class="description-paragraph">Лендинг курсов повышения квалификации</p>
+              <div class="description-buttons">
+                <button type="button" class="description-button">9 900 РУБ.</button>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-item">
+            <div class="catalog-item-decorate"></div>
+            <div class="catalog-item-image">
+                <img src="img/img-kvast.jpg" alt="Кваст">
+            </div>
+            <div class="catalog-item-description">
+              <a href="#" class="catalog-item-link"><h3 class="description-header">Кваст</h3></a>
+              <p class="description-paragraph">Промо-сайт производителя крафтового кваса</p>
+              <div class="description-buttons">
+                <button type="button" class="description-button">9 900 РУБ.</button>
+              </div>
+            </div>
+          </div>
     </section>
+    <div class="catalog-buttons-wrap">
+      <div class="catalog-button"><button type="button" class="page-button active-page-button">1</button></div>
+      <div class="catalog-button"><button type="button" class="page-button">2</button></div>
+      <div class="catalog-button"><button type="button" class="page-button">3</button></div>
+      <div class="catalog-button"><button type="button" class="next-button">Следующая</button></div>
+    </div>
      </div>
       </div>
       </div>
-
-
       <form class="feedback" action="" method="post">
           <h2>Напишите нам</h2>
           <label for="username">Ваше имя:</label>
@@ -143,14 +219,17 @@
           <button type="submit" name="sendbutton">Отправить</button>
           <button type="button" name="closebutton">Закрыть</button>
        </form>
-          <section class="map">
-              <div class="feedback-write-us">
-                <h3>NЁRDS DESIGN STUDIO</h3>
-                <span class="feedback-address">191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8</span>
-                <span class="feedback-telephone">тел. +7(812)275-75-75</span>
-                <button type="button" name="write-us-button">Напишите нам</button>
-              </div>
-          </section>
+       <section class="map">
+         <div class="map-image">
+           <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5a721fe130df8b4a33efbc38c09dff4abed4be637de0900b5c49e1a316053371&amp;source=constructor" width="100%" height="416" frameborder="0"></iframe>
+           <div class="feedback-write-us">
+             <h3>NЁRDS DESIGN STUDIO</h3>
+             <div class="feedback-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
+             <div class="feedback-telephone">тел. +7 (812) 275-75-75</div>
+             <button type="button" class="write-us-button">Напишите нам</button>
+           </div>
+         </div>
+       </section>
         <footer class="main-footer">
           <div class="container">
             <div class="footer-social">
