@@ -8,39 +8,6 @@ var emailField = document.getElementById ('useremail');
 var commentField = document.getElementById ('comment');
 var sendButton = document.querySelector ('.send-form-button');
 
-buttons[0].onclick = function () {
-  for (var i = 1; i < buttons.length; i++) {
-    if (buttons[i].classList.contains ('active-dot')) {
-        buttons[i].classList.remove ('active-dot');
-        sliders[i].classList.remove ('active');
-    }
-  }
-  buttons[0].classList.add ('active-dot');
-  sliders[0].classList.add ('active');
-}
-
-buttons[1].onclick = function () {
-  for (var i = 0; i < buttons.length; i++) {
-    if (buttons[i].classList.contains ('active-dot')) {
-        buttons[i].classList.remove ('active-dot');
-        sliders[i].classList.remove ('active');
-    }
-  }
-  buttons[1].classList.add ('active-dot');
-  sliders[1].classList.add ('active');
-}
-
-buttons[2].onclick = function () {
-  for (var i = 0; i < buttons.length; i++) {
-    if(buttons[i].classList.contains ('active-dot')) {
-        buttons[i].classList.remove ('active-dot');
-        sliders[i].classList.remove ('active');
-    }
-  }
-  buttons[2].classList.add ('active-dot');
-  sliders[2].classList.add ('active');
-}
-
 openButton.addEventListener ('click', function () {
   modal.classList.add ('active-modal');
 });
@@ -64,3 +31,37 @@ sendButton.addEventListener ('click', function (event) {
     commentField.classList.add ('invalid-field');
   }
 });
+if (!(buttons.length===0 && sliders.length===0)) {
+  buttons[0].onclick = function () {
+    for (var i = 1; i < buttons.length; i++) {
+      if (buttons[i].classList.contains ('active-dot')) {
+          buttons[i].classList.remove ('active-dot');
+          sliders[i].classList.remove ('active');
+      }
+    }
+    buttons[0].classList.add ('active-dot');
+    sliders[0].classList.add ('active');
+  }
+
+  buttons[1].onclick = function () {
+    for (var i = 0; i < buttons.length; i++) {
+      if (buttons[i].classList.contains ('active-dot')) {
+          buttons[i].classList.remove ('active-dot');
+          sliders[i].classList.remove ('active');
+      }
+    }
+    buttons[1].classList.add ('active-dot');
+    sliders[1].classList.add ('active');
+  }
+
+  buttons[2].onclick = function () {
+    for (var i = 0; i < buttons.length; i++) {
+      if(buttons[i].classList.contains ('active-dot')) {
+          buttons[i].classList.remove ('active-dot');
+          sliders[i].classList.remove ('active');
+      }
+    }
+    buttons[2].classList.add ('active-dot');
+    sliders[2].classList.add ('active');
+  }
+}

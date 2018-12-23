@@ -202,6 +202,7 @@ a {
   font-weight: 500;
   border-radius: 3px;
   display: inline-block;
+  vertical-align: middle;
   background-color: #fb565a;
   position: relative;
   z-index: 2;
@@ -243,7 +244,7 @@ left: -13px;
 }
 .products {
   background-color: #ffffff;
-  padding-top: 80px;
+  padding-top: 83px;
 }
 .products-list {
   list-style: none;
@@ -290,6 +291,7 @@ left: -13px;
   font-weight: 500;
   border-radius: 3px;
   display: inline-block;
+  vertical-align: middle;
 }
 .red-link {
   background-color: #fb565a;
@@ -387,7 +389,7 @@ left: -13px;
   text-transform: uppercase;
   color: #000000;
   padding-left: 16px;
-  padding-bottom: 45px;
+  padding-bottom: 60px;
 }
 .statistics-table {
   border-collapse: collapse;
@@ -446,6 +448,7 @@ left: -13px;
   margin: 0;
   padding: 0;
   opacity:0.2;
+  vertical-align: middle;
 }
 .projects-list a:hover,.projects-list a:focus {
   opacity: 1;
@@ -496,7 +499,7 @@ left: -13px;
 .social-button:active {
   background-color: #d7373b;
   -webkit-box-shadow: 0 3px #c13135;
-  box-shadow: 0 3px #c13135;
+  box-shadow: 0 3px #c13135 inset;
 }
 .social-button:active path {
   fill: #e37376;
@@ -735,6 +738,7 @@ input[type="radio"]:disabled + label {
 }
 .showbutton {
   display: inline-block;
+  vertical-align: middle;
   cursor: pointer;
   border: none;
   padding: 0;
@@ -804,6 +808,7 @@ input[type="radio"]:disabled + label {
 }
 .sort-button {
   display: inline-block;
+  vertical-align: middle;
   background-color: transparent;
   padding: 0;
   margin: 0;
@@ -829,6 +834,7 @@ input[type="radio"]:disabled + label {
 }
 .down-button, .up-button {
   display: inline-block;
+  vertical-align: middle;
   position: absolute;
   margin: 0;
   padding: 0;
@@ -872,13 +878,13 @@ input[type="radio"]:disabled + label {
   background-image: url(../img/browser.png);
   min-height: 40px;
 }
-.catalog-item:hover .catalog-item-decorate{
+.catalog-item:hover .catalog-item-decorate {
   background-image: url(../img/browser-hover.png);
 }
 .catalog-item-description {
   position: absolute;
   background-color: #eeeeee;
-  top: 60%;
+  bottom: 32px;
   padding-top: 38px;
   padding-bottom: 41px;
   display: none;
@@ -969,6 +975,7 @@ input[type="radio"]:disabled + label {
   margin: 0;
   padding: 0;
   display: inline-block;
+  vertical-align: middle;
   border: none;
   background-color: #eeeeee;
   text-align: center;
@@ -1041,6 +1048,7 @@ input[type="radio"]:disabled + label {
 }
 .feedback-address, .feedback-telephone {
   line-height: 18px;
+  color: #000000;
 }
 .feedback-address {
   width: 210px;
@@ -1088,7 +1096,8 @@ input[type="radio"]:disabled + label {
   display: none;
   position: fixed;
   top: 80px;
-  left: 11%;
+  left: 50%;
+  margin-left: -480px;
   width: 960px;
   background-color: #ffffff;
   padding: 30px 100px 84px 100px;
