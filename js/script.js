@@ -8,7 +8,8 @@ var emailField = document.getElementById ('useremail');
 var commentField = document.getElementById ('comment');
 var sendButton = document.querySelector ('.send-form-button');
 
-openButton.addEventListener ('click', function () {
+openButton.addEventListener ('click', function (event) {
+  event.preventDefault ();
   modal.classList.add ('active-modal');
 });
 
@@ -19,6 +20,8 @@ closeButton.addEventListener ('click', function () {
 sendButton.addEventListener ('click', function (event) {
   if (!loginField.value || !emailField.value || !commentField.value) {
     event.preventDefault ();
+    modal.classList.remove('invalid-form');
+    void modal.offsetWidth;
     modal.classList.add ('invalid-form');
   }
   if (!loginField.value) {
@@ -30,7 +33,8 @@ sendButton.addEventListener ('click', function (event) {
   if (!commentField.value) {
     commentField.classList.add ('invalid-field');
   }
-});
+}, false);
+
 if (!(buttons.length===0 && sliders.length===0)) {
   buttons[0].onclick = function () {
     for (var i = 1; i < buttons.length; i++) {

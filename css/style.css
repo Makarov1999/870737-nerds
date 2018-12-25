@@ -9,8 +9,8 @@ body {
   background-color: #ffffff;
 }
 img {
-max-width: 100%;
-height: auto;
+  max-width: 100%;
+  height: auto;
 }
 a {
   text-decoration: none;
@@ -55,7 +55,6 @@ a {
   -ms-flex-align: center;
   align-items: center;
   padding-top: 50px;
-
 }
 .nerds-logo, .nerds-logo-link {
   position: relative;
@@ -237,7 +236,7 @@ a {
   background-position: 50% 50%;
 }
 .main-slider-dot:first-child {
-left: -13px;
+  left: -13px;
 }
 .main-slider-dot:nth-child(3) {
   left: 13px;
@@ -265,7 +264,6 @@ left: -13px;
   margin: 0;
   position: relative;
   width: 300px;
-
 }
 .products-list h3 {
   margin: 0;
@@ -274,6 +272,7 @@ left: -13px;
   line-height: 30px;
   font-weight: 700;
   color: #000000;
+  text-transform: uppercase;
   margin-top: 18px;
   margin-bottom: 16px;
 }
@@ -354,7 +353,6 @@ left: -13px;
   text-transform: uppercase;
   line-height: 24px;
   color:#000000;
-
 }
 .about-us-orders {
   list-style: none;
@@ -425,7 +423,6 @@ left: -13px;
   border-bottom: 2px solid #e1e1e1;
   width: 100%;
 }
-
 .projects-list li {
   margin: 0;
   padding: 0;
@@ -1016,15 +1013,14 @@ input[type="radio"]:disabled + label {
   padding-top: 13px;
   padding-bottom: 13px;
 }
-
 .feedback-write-us {
   width: 319px;
   position: absolute;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #ffffff;
-  top: 54px;
-  left: 9.8%;
+  top: 58px;
+  left: 15.8%;
   padding: 48px 0px 0 48px;
 }
 .map {
@@ -1060,9 +1056,8 @@ input[type="radio"]:disabled + label {
   padding-bottom: 37px;
 }
 .write-us-button {
-  margin: 0;
-  padding: 0;
-  border: none;
+  display: inline-block;
+  vertical-align: middle;
   width: 219px;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
@@ -1076,6 +1071,7 @@ input[type="radio"]:disabled + label {
   border-radius: 3px;
   margin-bottom: 46px;
   cursor: pointer;
+  text-align: center;
 }
 .write-us-button:hover, .write-us-button:focus {
   background-color: #e74246;
@@ -1210,10 +1206,10 @@ input.invalid-field::-webkit-input-placeholder {
   color: #e74246;
 }
 input.invalid-field:-ms-input-placeholder {
-    color: #e74246;
+  color: #e74246;
 }
 input.invalid-field::-ms-input-placeholder {
-    color: #e74246;
+  color: #e74246;
 }
 input.invalid-field::placeholder {
   color: #e74246;
@@ -1264,6 +1260,7 @@ input.invalid-field::placeholder {
   padding-top: 17px;
   padding-bottom: 16px;
   border-radius: 3px;
+  cursor: pointer;
 }
 .send-form-button:hover, .send-form-button:focus {
   background-color: #e74246;
@@ -1325,7 +1322,6 @@ textarea.invalid-field:-moz-placeholder {
 textarea.invalid-field:-ms-input-placeholder {
   color: #e74246;
 }
-
 .close-form-button {
   margin: 0;
   padding: 0;
