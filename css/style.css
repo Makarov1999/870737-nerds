@@ -303,7 +303,6 @@ a {
 }
 .red-link:hover,.red-link:focus {
   background-color: #e74246;
-
 }
 .green-link:hover,.green-link:focus {
   background-color: #00bc6c;
@@ -393,7 +392,7 @@ a {
   border-collapse: collapse;
 }
 .statistics-percents td {
-  padding: 0px 23px 37px 0px;
+  padding: 0 23px 37px 0;
 }
 .statistics-persent {
   font-size: 25px;
@@ -595,6 +594,7 @@ a {
 .range-slider {
   position: absolute;
   display: inline-block;
+  vertical-align: middle;
   width: 20px;
   height: 23px;
   background-image: url(../img/filter-button.png);
@@ -646,10 +646,10 @@ a {
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-bottom: 47px;
+  padding-bottom: 37px;
 }
 .features-item {
-  padding-left: 36px;
+  padding-left: 37px;
 }
 .greed-option {
   padding-left: 36px;
@@ -657,7 +657,7 @@ a {
 .greed-option:not(:last-child) {
   padding-bottom: 16px;
 }
-.features-item:not(:last-child) {
+.features-item {
   padding-bottom: 16px;
 }
 input[type="checkbox"] + label {
@@ -670,29 +670,29 @@ input[type="checkbox"] + label::before {
   left: -35px;
   width: 23px;
   height: 23px;
-  background-image: url(../img/checkbox-off.png);
+  background-image: url(../img/checkbox-off.svg);
 }
 input[type="checkbox"]:checked + label::before {
   width: 27px;
-  background-image: url(../img/checkbox-on.png);
+  background-image: url(../img/checkbox-on.svg);
 }
 input[type="checkbox"] + label:hover::before {
-  background-image: url(../img/checkbox-off-hover.png);
+  background-image: url(../img/checkbox-off-hover.svg);
 }
 input[type="checkbox"]:focus + label::before {
-  background-image: url(../img/checkbox-off-hover.png);
+  background-image: url(../img/checkbox-off-hover.svg);
 }
 input[type="checkbox"]:checked + label:hover::before {
-  background-image: url(..//img/checkbox-on-hover.png);
+  background-image: url(..//img/checkbox-on-hover.svg);
 }
 input[type="checkbox"]:checked:focus + label::before {
-  background-image: url(..//img/checkbox-on-hover.png);
+  background-image: url(..//img/checkbox-on-hover.svg);
 }
 input[type="checkbox"]:disabled + label::before {
-  background-image: url(../img/checkbox-off-disabled.png);
+  background-image: url(../img/checkbox-off-disabled.svg);
 }
 input[type="checkbox"]:disabled:checked + label::before {
-  background-image: url(../img/checkbox-on-disabled.png);
+  background-image: url(../img/checkbox-on-disabled.svg);
 }
 input[type="checkbox"]:disabled + label {
   color: #bec1c2;
@@ -707,28 +707,28 @@ input[type="radio"] + label::before {
   left: -34px;
   width: 25px;
   height: 25px;
-  background-image: url(../img/radio-off.png);
+  background-image: url(../img/radio-off.svg);
 }
 input[type="radio"]:checked + label::before {
-  background-image: url(../img/radio-on.png);
+  background-image: url(../img/radio-on.svg);
 }
 input[type="radio"] + label:hover::before {
-  background-image: url(../img/radio-off-hover.png);
+  background-image: url(../img/radio-off-hover.svg);
 }
 input[type="radio"]:focus + label:before {
-  background-image: url(../img/radio-off-hover.png);
+  background-image: url(../img/radio-off-hover.svg);
 }
 input[type="radio"]:checked + label:hover::before {
-  background-image: url(../img/radio-on-hover.png);
+  background-image: url(../img/radio-on-hover.svg);
 }
 input[type="radio"]:focus:checked + label::before {
-  background-image: url(../img/radio-on-hover.png);
+  background-image: url(../img/radio-on-hover.svg);
 }
 input[type="radio"]:disabled + label::before {
-  background-image: url(../img/radio-off-disabled.png);
+  background-image: url(../img/radio-off-disabled.svg);
 }
 input[type="radio"]:disabled:checked + label::before {
-  background-image: url(../img/radio-on-disabled.png);
+  background-image: url(../img/radio-on-disabled.svg);
 }
 input[type="radio"]:disabled + label {
   color: #ededed;
@@ -914,6 +914,7 @@ input[type="radio"]:disabled + label {
 }
 .description-button {
   display: inline-block;
+  vertical-align: middle;
   padding: 0;
   margin: 0;
   border: none;
@@ -1247,6 +1248,7 @@ input.invalid-field::placeholder {
   padding: 0;
   border: none;
   display: inline-block;
+  vertical-align: middle;
   width: 260px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
